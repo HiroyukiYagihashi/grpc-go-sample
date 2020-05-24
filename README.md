@@ -1,9 +1,9 @@
 ## grpc-go-sample
-- 基本的には公式のQuick Startを参照
+- Official Quick Start
   - https://grpc.io/docs/quickstart/go/
-- サーバーの動作確認はgrpcurlを使用
+- grpcurl
   - https://github.com/fullstorydev/grpcurl
-  
+
 ## implementation
 - write proto file
 - do `protoc -I helloworld/ helloworld/helloworld.proto --go_out=plugins=grpc:helloworld`
@@ -13,7 +13,7 @@
 - DONE!
 
 ## How to use
-- client access
+- golang access
 ```
 go run greeter_server/main.go
 go run greeter_client/main.go
